@@ -293,6 +293,7 @@ Saya perlu menjadi admin dengan beberapa izin:
         else None
     )
     url = get_url(message)
+    await message.delete()
     fucksemx = 0
     if audio:
         fucksemx = 1

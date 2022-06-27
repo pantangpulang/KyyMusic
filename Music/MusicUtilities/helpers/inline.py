@@ -11,11 +11,14 @@ from Music.config import GROUP, CHANNEL
 def play_markup(videoid, user_id):
     buttons = [
         [
-            InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{CHANNEL}"),
-            InlineKeyboardButton(text="ᴍᴇɴᴜ", callback_data=f"other {videoid}|{user_id}"),
+            InlineKeyboardButton(text="▷", callback_data=f"resumevc2"),
+            InlineKeyboardButton(text="II", callback_data=f"pausevc2"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"skipvc2"),
+            InlineKeyboardButton(text="▢", callback_data=f"stopvc2"),
         ],
-        [      
-               InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data=f"close"),
+        [
+            InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{CHANNEL}"),
+            InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data=f"close"),
         ],
     ]
     return buttons
@@ -23,12 +26,6 @@ def play_markup(videoid, user_id):
 
 def others_markup(videoid, user_id):
     buttons = [
-        [
-            InlineKeyboardButton(text="▷", callback_data=f"resumevc2"),
-            InlineKeyboardButton(text="II", callback_data=f"pausevc2"),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"skipvc2"),
-            InlineKeyboardButton(text="▢", callback_data=f"stopvc2"),
-        ],
         [
             InlineKeyboardButton(text="➕ ᴀᴅᴅ ʏᴏᴜʀ ʟɪsᴛ​", callback_data=f'playlist {videoid}|{user_id}'),
             InlineKeyboardButton(text="➕ ᴀᴅᴅ ɢʀᴏᴜᴘ ʟɪsᴛ​", callback_data=f'group_playlist {videoid}|{user_id}'),

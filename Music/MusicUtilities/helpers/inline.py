@@ -108,10 +108,15 @@ def search_markup(
                 text="⁵", callback_data=f"Music2 {ID5}|{duration5}|{user_id}"
             ),
         ],
-        [InlineKeyboardButton(text="⪼", callback_data=f"popat 1|{query}|{user_id}")],
         [
+         InlineKeyboardButton(
+                text="⪻", callback_data=f"popat 2|{query}|{user_id}"
+            ),
             InlineKeyboardButton(
-                text="ᴛᴜᴛᴜᴘ", callback_data=f"ppcl2 smex|{user_id}"
+                text="❌", callback_data=f"ppcl2 smex|{user_id}"
+            ),
+         InlineKeyboardButton(
+                text="⪼", callback_data=f"popat 1|{query}|{user_id}"
             ),
         ],
     ]
@@ -152,10 +157,17 @@ def search_markup2(
                 text="¹⁰", callback_data=f"Music2 {ID10}|{duration10}|{user_id}"
             ),
         ],
-        [
-            InlineKeyboardButton(text="⪻", callback_data=f"popat 2|{query}|{user_id}"),
+         [
+            InlineKeyboardButton(
+                text="⪻", callback_data=f"popat 2|{query}|{user_id}"
+            ),
+            InlineKeyboardButton(
+                text="❌", callback_data=f"ppcl2 smex|{user_id}"
+            ),
+            InlineKeyboardButton(
+                text="⪼", callback_data=f"popat 1|{query}|{user_id}"
+            ),
         ],
-        [InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data=f"ppcl2 smex|{user_id}")],
     ]
     return buttons
 

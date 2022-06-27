@@ -1,4 +1,3 @@
-import time
 import asyncio
 import time
 import uvloop
@@ -11,6 +10,7 @@ from Music.MusicUtilities.database.queue import (get_active_chats, remove_active
 from Music.MusicUtilities.tgcallsrun import run
 from pytgcalls import idle
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
+import time
 
 Client(
     ':Music:',

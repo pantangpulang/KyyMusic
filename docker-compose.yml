@@ -40,4 +40,3 @@ services:
 
       UPSTREAM_BRANCH: $UPSTREAM_BRANCH
      
-      AUTO_LEAVE: $AUTO_LEAVE

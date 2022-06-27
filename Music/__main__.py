@@ -11,12 +11,9 @@ from Music import BOT_NAME, ASSNAME, app, client
 from Music.MusicUtilities.database.functions import clean_restart_stage
 from Music.MusicUtilities.database.queue import (get_active_chats, remove_active_chat)
 from Music.MusicUtilities.tgcallsrun import run
+from Music.MusicUtilities.helpers.decorators import nothingmuch as startapp
 from pytgcalls import idle
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
-
-
-scheduler = AsyncIOScheduler()
 
 Client(
     ':Music:',
@@ -59,6 +56,7 @@ async def load_start():
             pass
     await startapp()
     await app.send_message(LOG_GROUP_ID, "Bot Started")
+    await client.send_message(LOG_GROUP_ID, "Assistant Started"
     print("[INFO]: STARTED") 
     
    
